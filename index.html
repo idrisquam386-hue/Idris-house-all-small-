@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Idris Quam - Architect</title>
+<style>
+body { font-family: Arial; margin:0; background:#f5f5f5; }
+header { background:black; color:white; padding:20px; text-align:center; }
+.card { background:white; margin:15px; padding:15px; border-radius:10px; }
+img { width:100%; border-radius:8px; }
+button { background:black; color:white; padding:12px; width:100%; border:none; border-radius:5px; }
+</style>
+</head>
+<body>
+
+<header>
+<h1>Idris Quam</h1>
+<p>Architectural Designer | Future Software Engineer</p>
+</header>
+
+<div class="card">
+<h2>My Work</h2>
+<p>160m² Modern Bungalow - Designed in Ilorin</p>
+<img src="https://via.placeholder.com/400x250" alt="House">
+<p>Cost: 25M | 4 Bedrooms | Built with AutoCAD + Wix knowledge</p>
+</div>
+
+<div class="card">
+<h2>House Calculator (My JS Project)</h2>
+<p>Enter land size (sqm):</p>
+<input type="number" id="size" placeholder="e.g 160">
+<button onclick="calc()">Calculate Blocks</button>
+<p id="result"></p>
+</div>
+
+<div class="card">
+<button onclick="window.location.href='https://wa.me/2340000000000'">Chat Me On WhatsApp</button>
+</div>
+
+<script>
+function calc(){
+ let s = document.getElementById('size').value;
+ let blocks = s * 12;
+ document.getElementById('result').innerText = "You need about " + blocks + " blocks for " + s + "sqm";
+}
+</script>
+
+</body>
+</html>
